@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import axios from 'axios';
 import { search } from '../api/api';
 
 const ListPost = ({ url }) =>{
@@ -14,7 +13,7 @@ const ListPost = ({ url }) =>{
         search(url, setPosts)
 
  
-    }, [])
+    }, [url])
 
     console.log(posts)
   

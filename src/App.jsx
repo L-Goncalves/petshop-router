@@ -14,6 +14,7 @@ import Post from './paginas/Post'
 
 // Components
 import Header from './components/Header'
+import Category from './paginas/Category';
 function App() {
 
   return (
@@ -29,6 +30,11 @@ function App() {
       <Route path='/Sobre'>
         <Sobre/>
       </Route>
+
+      <Route path='/categoria/:id'>
+        <Category/>
+      </Route>
+
       <Route path='/posts/:id'>
         <Post/>
       </Route>
